@@ -21,6 +21,28 @@
         <defaultGoal>process-resources</defaultGoal>
         <plugins>
             <plugin>
+                <groupId>com.nobutnk</groupId>
+                <artifactId>redpen-maven-plugin</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <configuration>
+                    <inputFormat>asciidoc</inputFormat>
+                    <configFileName>redpen-conf-ja.xml</configFileName>
+                    <language>ja</language>
+                    <limit>2</limit>
+                    <resultFormat>json</resultFormat>
+                    <inputFile>src/main/docs</inputFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>redpen</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>redpen</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>${asciidoctor.maven.plugin.version}</version>
