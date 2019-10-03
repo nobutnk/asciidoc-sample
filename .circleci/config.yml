@@ -38,6 +38,7 @@ jobs:
           key: v1-dependencies-{{ checksum "pom.xml" }}
 
       # run tests!
+      - run: mvn clean
       - run: mvn -Dcharset=utf-8
       - store_artifacts:
           path: target/docs
