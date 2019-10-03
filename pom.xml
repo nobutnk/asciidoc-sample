@@ -62,7 +62,7 @@
                     <!-- *nix :
                         <graphvizdot>/usr/local/bin/dot</graphvizdot>
                     -->
-                        <fontFamily>Noto Sans CJK JP Regular</fontFamily>
+                        <fontFamily>Noto Serif CJK JP Regular</fontFamily>
                     </attributes>
                 </configuration>
                 <executions>
