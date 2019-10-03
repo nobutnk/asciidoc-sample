@@ -1,4 +1,9 @@
 @startuml sample
+
+skinparam {
+    defaultFontName Noto Sans CJK JP Black
+ }
+
 hide footbox
 actor takeshi as "ジャイアン"
 actor nobita as "のび太"
