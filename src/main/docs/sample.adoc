@@ -60,7 +60,7 @@ user -> ログイン : ログインする
 ログイン --> user:
 ----
 
-[plantuml,activity,svg,align="center"]
+[plantuml,activity,png,align="center"]
 ----
 include::flow/sample.pu[]
 ----
